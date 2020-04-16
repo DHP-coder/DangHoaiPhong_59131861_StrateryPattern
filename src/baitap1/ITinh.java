@@ -10,5 +10,6 @@ package baitap1;
  * @author DangHoaiPhong
  */
 public interface ITinh {
+
     public float tinh(float a, float b);
 }

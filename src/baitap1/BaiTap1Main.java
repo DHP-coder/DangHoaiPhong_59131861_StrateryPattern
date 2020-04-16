@@ -22,5 +22,5 @@ public class BaiTap1Main {
         context.setTinhToan(new Tru());
         System.out.println(context.tinh(54, 78));
     }
-    
+
 }

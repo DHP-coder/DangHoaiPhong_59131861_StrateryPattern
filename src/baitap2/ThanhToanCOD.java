@@ -9,12 +9,14 @@ package baitap2;
  *
  * @author DangHoaiPhong
  */
-public class ThanhToanCOD implements IThanhToan{
+public class ThanhToanCOD implements IThanhToan {
 
     @Override
     public double thanhToan(int tienHang) {
-        if(tienHang>2000000) return tienHang*0.98;
+        if (tienHang > 2000000) {
+            return tienHang * 0.98;
+        }
         return tienHang;
     }
-    
+
 }

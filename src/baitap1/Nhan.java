@@ -9,11 +9,11 @@ package baitap1;
  *
  * @author DangHoaiPhong
  */
-public class Nhan implements ITinh{
+public class Nhan implements ITinh {
 
     @Override
     public float tinh(float a, float b) {
-        return a*b;
+        return a * b;
     }
-    
+
 }

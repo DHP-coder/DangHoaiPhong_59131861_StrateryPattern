@@ -9,11 +9,11 @@ package baitap1;
  *
  * @author DangHoaiPhong
  */
-public class Tru implements ITinh{
+public class Tru implements ITinh {
 
     @Override
     public float tinh(float a, float b) {
-        return a-b;
+        return a - b;
     }
-    
+
 }

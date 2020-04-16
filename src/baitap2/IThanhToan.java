@@ -10,5 +10,6 @@ package baitap2;
  * @author DangHoaiPhong
  */
 public interface IThanhToan {
-    public double thanhToan (int tienHang);
+
+    public double thanhToan(int tienHang);
 }

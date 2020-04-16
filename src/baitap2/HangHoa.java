@@ -18,10 +18,14 @@ public class HangHoa {
     public HangHoa(String tenHH, int gia, String moTa) {
         this.tenHH = tenHH;
         this.gia = gia;
-        this.moTa= moTa;
+        this.moTa = moTa;
     }
-    
-    public int getGia(){
+
+    public int getGia() {
         return gia;
+    }
+
+    public String getThongTin() {
+        return "Ten hang hoa: " + this.tenHH + "\nGia: " + this.gia + "\nMo ta: " + this.moTa;
     }
 }

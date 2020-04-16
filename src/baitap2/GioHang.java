@@ -12,22 +12,27 @@ import java.util.ArrayList;
  * @author DangHoaiPhong
  */
 public class GioHang {
+
     public IThanhToan hinhthucTT;
-    public ArrayList<HangHoa> hh;
+    public ArrayList<HangHoa> dsHH = new ArrayList<>();
 
     public void setHinhthucTT(IThanhToan hinhthucTT) {
         this.hinhthucTT = hinhthucTT;
     }
 
-    public void setHh(ArrayList<HangHoa> hh) {
-        this.hh = hh;
-    }
-    
-    public double thanhToan(){
-        int tong =0;
-        for(int i=0;i<hh.size();i++){
-            tong += hh.get(i).getGia();
+    public double thanhToan() {
+        int tong = 0;
+        for (int i = 0; i < dsHH.size(); i++) {
+            tong += dsHH.get(i).getGia();
         }
         return hinhthucTT.thanhToan(tong);
+    }
+
+    public void them(HangHoa hh) {
+        dsHH.add(hh);
+    }
+
+    public void inDS() {
+        dsHH.forEach(hh -> System.out.println(hh.getThongTin()));
     }
 }
